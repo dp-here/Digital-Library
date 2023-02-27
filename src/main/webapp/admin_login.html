@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>admin login</title>
+<link rel="stylesheet" href="admin_login.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+</head>
+<body>
+        <div class="blank"></div>
+        <div class="header">
+            <div class="logo"><img src="images/logo.png" alt="logo" style="height:50px; width:50px;" onclick="alert('Login to the website first.')"></div>
+            <div class="heading"><u><h1 onclick="alert('Welcome to Digital Library')"><a href=#>Digital_Library<sub>com</sub></a></h1></u></div></div>
+			<div class="contagginer"> 
+			<div class="nav" id="mynav">
+                <a href="#" class="active">Home</a>
+                <a href="#">News</a>
+                <a href="#footer">Contact</a>
+                <a href="#footer">About</a>
+        <div class="drp"><button class="drpbtn">Login
+          <i class="fa fa-caret-down"></i></button>
+        <div class="cont">
+          <a href="admin_login.html" target="_blank">ADMIN LOGIN</a>
+          <a href="user_login.html" target="_blank">USER LOGIN</a>
+        </div></div> 
+                <a href="user_signup.html" target="_blank">Signup</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navigation()">&#9776;</a> 
+              </div></div>
+<div class="form">
+<form name="myForm" action="Admin_login" onsubmit="return adminForm()" method="get">
+<h2><u>ADMIN LOGIN</u></h2>	
+<label>Username:</label> <input type="text" name="user"><br>
+<label>Password:</label> <input type="password" name="pass"><br>
+<a href="">forgot password?</a>
+<input type="submit" Value="Submit">
+</form>
+</div>
+
+<div class="blankk"></div>
+<footer class="footer-distributed" id="footer">
+			<div class="footer-left">
+        <div class="foot">
+				<img src="images/logo.png" alt="logo" style="height:80px; width:80px;">
+        <div class="heading"><u><h1><a href=#>Digital_Library.com</a></h1></u></div></div>
+				<p class="footer-links">
+					<a href="#">Home</a>
+					<a href="#">News</a>
+					<a href="#">About</a>
+					<a href="#">Faq</a>
+					<a href="#">Contact</a>
+				</p>
+				<p class="footer-company-name">Digital_Library.com © 2022</p>
+			</div>
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Digital_Library, Jaipur</span> Rajasthan, India</p>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p><a href="tel:+918732523852">+91 8732523852</a></p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@digital_library.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Digital_Library.com is established in 2022. It is a website designed for easy access and management of Library services like reading ebooks, reading latest news, issuing books and lot more features. 
+				</p>
+				<div class="footer-icons">
+					<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.github.com/" target="_blank"><i class="fa fa-github"></i></a>
+				</div>
+			</div>
+		</footer>
+		<script src="script.js"></script>
+</body>
+</html>
