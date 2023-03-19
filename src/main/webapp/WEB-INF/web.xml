@@ -59,4 +59,24 @@
     <servlet-name>User_signup</servlet-name>
     <url-pattern>/User_signup</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>View_order</display-name>
+    <servlet-name>View_order</servlet-name>
+    <servlet-class>digital_library.View_order</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>View_order</servlet-name>
+    <url-pattern>/View_order</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Change_pass</display-name>
+    <servlet-name>Change_pass</servlet-name>
+    <servlet-class>digital_library.Change_pass</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Change_pass</servlet-name>
+    <url-pattern>/Change_pass</url-pattern>
+  </servlet-mapping>
 </web-app>

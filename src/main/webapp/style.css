@@ -34,6 +34,7 @@ color: rgb(6, 6, 64);
 background-color: lightgreen;
 margin-bottom: 20px;
 margin-top: 10px;
+text-decoration: underline;
 }
 .heading sub{
     background-color: lightgreen;
@@ -148,6 +149,107 @@ margin-top: 10px;
 	font-style: oblique;
 	color: #c07f07;
 	text-align: center;
+}
+#serv{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-style: oblique;
+	color: #c07f07;
+	text-align: center;
+	text-decoration: underline;
+	border: 2px solid yellowgreen;
+	background-color:#4fced7;
+
+}
+
+.list{
+	text-align: center;
+	background-color:#63e072;
+	font-style: inherit;
+	font-size:x-large;
+    display: flex;
+	color: #151583;
+	list-style-type: disc;
+	margin-bottom: 10px;
+}
+.list ul{
+	margin-left:160px;
+	text-emphasis:unset;
+	text-align: left;
+}
+.list img{
+	height: 200px;
+	margin-top: 40px;
+	margin-left: 90px;
+	border: 2px solid black;
+	
+}
+
+.list ul li:hover{
+	cursor:pointer;
+	color: rgb(210, 49, 49);
+}
+.listo{
+	text-align: center;
+	background-color:#63e072;
+	font-style: inherit;
+	font-size:x-large;
+    display: flex;
+	color: #151583;
+	list-style-type: disc;
+	margin-bottom: 10px;
+}
+.listo ul{
+	margin-left:160px;
+	margin-top: 10px;
+	text-emphasis:unset;
+	text-align: left;
+}
+.listo img{
+	height: 200px;
+	margin-top: 0px;
+	margin-left: 90px;
+	border: 2px solid black;
+	
+}
+
+.listo ul li:hover{
+	cursor:pointer;
+	color: rgb(210, 49, 49);
+}
+
+.form{
+	text-align: center;
+}
+.form h1{
+	text-align: center;
+	 color:blue;
+	 font-weight: bold;
+	 text-decoration: underline;
+}
+
+form.form- {
+    display: table;
+	text-align: center;
+	margin-left: 450px;
+	margin-bottom: 15px;
+}
+
+div.form- {
+    display: table-row;
+	text-align: center;
+	
+}
+
+label,
+input {
+    display: table-cell;
+    margin-bottom: 10px;
+	width: 200px;
+	height: 30px;
+}
+
+label {
+    padding-right: 10px;
 }
 
 .foot{

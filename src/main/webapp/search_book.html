@@ -1,18 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+    <title>ADMIN LOGGED IN</title>
 </head>
 <body>
-<h1>Search Books</h1>
-<h3>Enter Book ID or Book Name or Author Name to
-search the book.</h3>
-<form action="Search_book">
-Book_ID <input type="text" name="id"><br>
-Book_Name <input type="text" name="book"><br>
-Author_Name <input type="text" name="author"><br>
-<input type="submit" value="Search">
-</form>
+    <div class="contagginer">
+        <div class="blank"></div>
+        <div class="header">
+            <div class="logo"><img src="images/logo.png" alt="logo" style="height:50px; width:50px;" onclick="alert('Login to the website first.')"></div>
+            <div class="heading"><h1 onclick="alert('Welcome to Digital Library')"><a href=#>Digital_Library<sub>com</sub></a></h1></div></div>
+              <div class="nav" id="mynav">
+                <a href="#" class="active">Home</a>
+                <a href="#">News</a>
+                <a href="#footer">Contact</a>
+                <a href="#footer">About</a>
+                <a href="home1.html">Services</a>
+        </div>
+                <div class="blankk"></div>
+              <div class="blankk"></div>
+              <div class="form">
+                <h1>Search Books</h1>
+                <h3>Enter Book ID, Book Name and Author Name to
+                    search the book.</h3>
+                  <form name="f1" action="Search_book" method="get" class="form-">
+                    <div class="form-">
+                      <label for="name"> Book_ID:</label>
+                      <input type="text" name="id">
+                    </div>
+                    <div class="form-">
+                        <label for="title">Book_Name: </label>
+                        <input type="text" name="book" id="title" >
+                      </div>    
+                      <div class="form-">
+                        <label for="title">Author_Name: </label>
+                        <input type="text" name="author" id="title">
+                      </div>                            
+                    <div class="form-">
+                      <input type="submit" value="Search">
+                    </div>
+                  </form>
+                </div>
+              <div class="blankk"></div>
+    <footer class="footer-distributed" id="footer">
+                <div class="footer-left">
+            <div class="foot">
+                    <img src="images/logo.png" alt="logo" style="height:80px; width:80px;">
+            <div class="heading"><h1><a href=#>Digital_Library.com</a></h1></div></div>
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">News</a>
+                        <a href="#">About</a>
+                        <a href="#">Faq</a>
+                        <a href="#">Contact</a>
+                    </p>
+                    <p class="footer-company-name">Digital_Library.com © 2022</p>
+                </div>
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>Digital_Library, Jaipur</span> Rajasthan, India</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p><a href="tel:+918732523852">+91 8732523852</a></p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@company.com">support@digital_library.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>About the company</span>
+                        Digital_Library.com is established in 2022. It is a website designed for easy access and management of Library services like reading ebooks, reading latest news, issuing books and lot more features. 
+                    </p>
+                    <div class="footer-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.github.com/" target="_blank"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </footer>
+    </div>
+    <script src="script.js"></script>
+    
+
 </body>
 </html>

@@ -44,16 +44,22 @@ public class Search_book extends HttpServlet {
             Statement stmt = con.createStatement();  
             ResultSet rs = stmt.executeQuery("select * from books where Book_ID='"+id+"' or \r\n"
             		+ "   Title='"+book_name+"' or Author_Name='"+author_name+"'");  
-            out.println("<table border=1 width=50% height=20%>");  
-            out.println("<tr><th>EmpId</th><th>EmpName</th><th>Salary</th><th>Cost</th><th>Quantity</th><tr>");  
-            while (rs.next()) 
+            
+           
+            if(!rs.next()) {
+            	out.println("<h1>The book you searched does not exist. Please check the details and try again.</h1>");
+            }
+            
+            else 
             {  
+            	 out.println("<table border=1 width=50% height=20%>");  
+                 out.println("<tr><th>EmpId</th><th>EmpName</th><th>Salary</th><th>Cost</th><th>Quantity</th><tr>"); 
+                 
                 String n = rs.getString("Book_ID");  
                 String nm = rs.getString("Title");  
                 String s = rs.getString("Author_Name");
-                int m = rs.getInt("Cost"); 
-                int mn = rs.getInt("Quantity");  
-                out.println("<tr><td>" + n + "</td><td>" + nm + "</td><td>" + s + "</td><td>" + m +"</td><td>" + mn +"</td></tr>");   
+                int m = rs.getInt("Cost");  
+                out.println("<tr><td>" + n + "</td><td>" + nm + "</td><td>" + s + "</td><td>" + m +"</td></tr>");   
             }  
             out.println("</table>");  
             out.println("</html></body>");  

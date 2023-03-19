@@ -42,7 +42,7 @@ public class User_signup extends HttpServlet {
    
           
       int  status=ps.executeUpdate();  
-          
+  	response.sendRedirect("home1.html"); 
         con.close();  
 			  
 			}catch(Exception e){out.println(e);} // TODO Auto-generated method stub

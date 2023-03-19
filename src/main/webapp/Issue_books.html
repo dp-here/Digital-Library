@@ -27,17 +27,22 @@
         </div>
                 <div class="blankk"></div>
               <div class="blankk"></div>
-   
-    <div class="form">
-        <form name="myForm" action="User_signup" method="post">
-        <h2><u>USER SIGNUP</u></h2>	
-        <label>Username:</label> <input type="text" name="user"><br>
-        <label>Password:</label> <input type="password" name="pass"><br>
-        <a href="">forgot password?</a>
-        <input type="submit" Value="Submit">
-        </form>
-        </div>
-        
+              <div class="form">
+                <h1>Change Password</h1>
+                  <form name="f1" action="admin_login.html" method="post" onsubmit="return passForm()" class="form-">
+                    <div class="form-">
+                      <label for="name">Enter new password : </label>
+                      <input type="text" name="password" required>
+                    </div>
+                    <div class="form-">
+                      <label for="title">Re-enter your new password: </label>
+                      <input type="text" name="password2" id="title" required>
+                    </div>    
+                    <div class="form-">
+                      <input type="submit" value="Submit">
+                    </div>
+                  </form>
+                </div>
               <div class="blankk"></div>
     <footer class="footer-distributed" id="footer">
                 <div class="footer-left">
@@ -82,6 +87,6 @@
             </footer>
     </div>
     <script src="script.js"></script>
-
+    
 </body>
 </html>
